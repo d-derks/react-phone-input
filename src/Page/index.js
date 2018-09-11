@@ -1,6 +1,7 @@
 import React from 'react';
 import MyPhoneInput from '../MyPhoneInput';
 import Provider, { Context } from '../Context';
+import Intro from '../Intro';
 
 export default class Page extends React.PureComponent {
 
@@ -13,15 +14,11 @@ export default class Page extends React.PureComponent {
             <Provider>
                 <div className='l-page'>
                     <div className="page-inner">
-                        <Context.Consumer>
-                            {
-                                ({ phone }) => (
-                                        <header className="page-header">
-                                            <h1>{ phone }</h1>
-                                        </header>
-                                )
-                            }
-                        </Context.Consumer>
+                        <header className="page-header">
+                            <div className="page-header-inner">
+                                <Intro />
+                            </div>
+                        </header>
                         <main className="page-main">
                             <MyPhoneInput/>
                         </main>
