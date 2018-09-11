@@ -1,0 +1,19 @@
+@import '../Settings/utils.scss';
+
+/* page *
+********/
+
+.l-page {
+    width: 100%
+}
+
+.page-header {
+    width: 100%;
+    background: $color-sympathy;
+}
+
+.page-header-inner {
+    display: flex;
+    padding: 0 50px;
+    min-height: 275px;
+}
