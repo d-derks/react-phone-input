@@ -1,0 +1,23 @@
+@import '../Settings/utils.scss';
+/* intro *
+*********/
+
+.b-intro {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 68px;
+    font-weight: 600;
+    color: $color-dazzled;
+
+    @media (max-width: 768px) {
+        font-size: 46px;
+    }
+    @media (max-width: 400px) {
+        font-size: 30px;
+    }
+}
