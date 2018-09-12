@@ -1,3 +1,5 @@
+@import '../Settings/utils.scss';
+
 .react-phone-number-input__row
 {
     /* This is done to stretch the contents of this component */
@@ -18,14 +20,8 @@
 .react-phone-number-input__icon
 {
     /* The flag icon size is 4x3 hence the exact `width` and `height` values */
-    width      : 1.24em;
-    height     : 0.93em;
-
-    /* `1px` is still too much for a "retina" screen but there's no way in CSS to specify "hairline" border width. */
-    border     : 1px solid rgba(0, 0, 0, 0.5);
-
-    /* Makes sure `width`x`height` is exactly `4x3` and `border` width is not included in it */
-    box-sizing : content-box;
+    width      : 40px;
+    height     : 30px;
 }
 
 .react-phone-number-input__icon--international
@@ -142,17 +138,17 @@
     height        : calc(0.3rem * 6);
     outline       : none;
     border-radius : 0;
-    padding       : 0;
+    padding       : 25px 0;
     appearance    : none;
     border        : none;
-    border-bottom : 1px solid #C5D2E0;
+    border-bottom : 4px solid $color-inspired;
     transition    : border 0.1s;
     font-size     : inherit;
 }
 
 .react-phone-number-input__input:focus
 {
-    border-color : #03B2CB;
+    border-color : $color-nostalgia;
 }
 
 .react-phone-number-input__input--disabled

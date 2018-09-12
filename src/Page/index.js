@@ -20,7 +20,11 @@ export default class Page extends React.PureComponent {
                             </div>
                         </header>
                         <main className="page-main">
-                            <MyPhoneInput/>
+                            <div className="page-section">
+                                <div className="page-section-inner">
+                                    <MyPhoneInput/>
+                                </div>
+                            </div>
                         </main>
                         <footer className="page-footer"></footer>
                     </div>
