@@ -1,7 +1,8 @@
 import React from 'react';
 import MyPhoneInput from '../MyPhoneInput';
-import Provider, { Context } from '../Context';
+import Provider from '../Context';
 import Intro from '../Intro';
+import './page.css';
 
 export default class Page extends React.PureComponent {
 
@@ -22,11 +23,20 @@ export default class Page extends React.PureComponent {
                         <main className="page-main">
                             <div className="page-section">
                                 <div className="page-section-inner">
-                                    <MyPhoneInput/>
+                                    <MyPhoneInput
+                                        placeholder="Enter phone number"
+                                    />
                                 </div>
                             </div>
                         </main>
-                        <footer className="page-footer"></footer>
+                        <footer className="page-footer">
+                            <div className="page-footer-inner">
+                                <small className='page-footer-text'>
+                                    React phone input, made by Debbie Derks 2018
+                                </small>
+                            </div>
+
+                        </footer>
                     </div>
                 </div>
             </Provider>

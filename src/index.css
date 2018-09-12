@@ -5,5 +5,21 @@
 }
 
 html {
-  font-family: sans-serif;
+  height: 100%;
+  font-family: 'Gingham Variable', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'GinghamVariable', sans-serif;
+    font-variation-settings: "wght" 400;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }

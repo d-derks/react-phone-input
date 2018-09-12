@@ -20,21 +20,22 @@
 .react-phone-number-input__icon
 {
     /* The flag icon size is 4x3 hence the exact `width` and `height` values */
-    width      : 40px;
-    height     : 30px;
+    width      : 50px;
+    height     : 38px;
+
+    @media (max-width: 400px) {
+        width      : 40px;
+        height     : 30px;
+    }
 }
 
 .react-phone-number-input__icon--international
 {
     /* The international icon size is square */
     /* and also has no border hence the `2 * 1px` `width` and `height` compensation */
-    width  : calc(0.93em + 2px);
-    height : calc(0.93em + 2px);
-
-    /* The international icon size is square hence the exact `padding` value */
-    /* for precise alignment with `4x3` sized country flags. */
-    padding-left  : 0.155em;
-    padding-right : 0.155em;
+    margin-right: 5px;
+    width  : 30px;
+    height : 30px;
 
     border : none;
 }
@@ -110,7 +111,8 @@
     margin-bottom      : 0.1em;
     margin-top         : 0.3em;
     margin-left        : 0.3em;
-    border-width       : 0.35em 0.2em 0 0.2em;
+    margin-right: 3px;
+    border-width       : 10px 6px 0 6px;
     border-style       : solid;
     border-left-color  : transparent;
     border-right-color : transparent;
@@ -138,12 +140,14 @@
     height        : calc(0.3rem * 6);
     outline       : none;
     border-radius : 0;
-    padding       : 25px 0;
+    padding       : 20px 5px;
     appearance    : none;
     border        : none;
     border-bottom : 4px solid $color-inspired;
     transition    : border 0.1s;
     font-size     : inherit;
+    font-family: 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wght" 300, "wdth" 150;
 }
 
 .react-phone-number-input__input:focus

@@ -9,9 +9,35 @@
     text-align: center;
 }
 
+.intro-media {
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60px;
+
+    @media (max-width: 400px) {
+        width: 50px;
+    }
+}
+
+.intro-title {
+    font-size: 52px;
+    font-family: 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wght" 800, "wdth" 150;
+    color: $color-relief;
+
+    @media (max-width: 768px) {
+        font-size: 38px;
+    }
+    @media (max-width: 400px) {
+        font-size: 24px;
+    }
+}
+
 .intro-text {
-    font-size: 68px;
-    font-weight: 600;
+    font-family: 'Gingham Variable', BlinkMacSystemFont , sans-serif;
+    font-variation-settings: "wght" 800, "wdth" 150;
+    font-size: 62px;
     color: $color-dazzled;
 
     @media (max-width: 768px) {
@@ -20,4 +46,15 @@
     @media (max-width: 400px) {
         font-size: 30px;
     }
+}
+
+/* icon *
+********/
+
+.b-icon {
+    width: 100%;
+}
+
+.icon-inner {
+    fill: $color-relief;
 }

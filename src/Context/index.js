@@ -16,15 +16,17 @@ export default class Provider extends React.PureComponent {
 
         return(
             <Context.Provider
-                value={{
-                    state: this.state,
-                    phone: this.state.phone,
-                    updateChange: (value) => {
-                        this.setState({
-                            phone: value
-                        })
+                value={
+                        {
+                        state: this.state,
+                        phone: this.state.phone,
+                        updateChange: (value) => {
+                            this.setState({
+                                phone: value
+                            })
+                        }
                     }
-            }}>
+             }>
                 {this.props.children}
             </Context.Provider>
         )
