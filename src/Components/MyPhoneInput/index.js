@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PhoneInput from 'react-phone-number-input';
-import { Context } from '../Context';
+import { Context } from '../../Context/index';
 import './myphoneinput.css';
 
 

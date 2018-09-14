@@ -1,7 +1,7 @@
 import React from 'react';
-import MyPhoneInput from '../MyPhoneInput';
-import Provider from '../Context';
-import Intro from '../Intro';
+import MyPhoneInput from '../MyPhoneInput/index';
+import Provider from '../../Context/index';
+import Intro from '../Intro/index';
 import './page.css';
 
 export default class Page extends React.PureComponent {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Context } from '../Context';
+import { Context } from '../../Context/index';
 import './intro.css';
 
 export default function Intro() {
